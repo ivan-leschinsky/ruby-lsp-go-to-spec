@@ -1,4 +1,5 @@
 # Ruby LSP - Go To Spec or Create
+[Ruby LSP go to spec](https://marketplace.visualstudio.com/items?itemName=ivan-leschinsky.ruby-lsp-go-to-spec)
 
 A VSCode extension that adds a command to quickly navigate to a spec file or create it if it doesn't exist.
 
