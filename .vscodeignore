@@ -7,3 +7,10 @@ tsconfig.json
 node_modules/**
 *.vsix
 .DS_Store
+.git/**
+.github/**
+**/*.map
+**/*.ts
+!out/**/*.js
+PUBLISHING.md
+.eslintrc.json
