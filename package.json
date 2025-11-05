@@ -2,7 +2,7 @@
   "name": "ruby-lsp-go-to-spec",
   "displayName": "Ruby LSP - Go To Spec or Create",
   "description": "Navigate to spec file or create it automatically if it doesn't exist",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "ivan-leschinsky",
   "author": {
     "name": "Ivan Leschinsky",
