@@ -1,0 +1,58 @@
+{
+  "name": "ruby-lsp-go-to-spec",
+  "displayName": "Ruby LSP - Go To Spec or Create",
+  "description": "Navigate to spec file or create it automatically if it doesn't exist",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ivan Leschinsky",
+    "email": "me@vano.one"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivan-leschinsky/ruby-lsp-go-to-spec"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:ruby"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rubyLsp.goToRelevantFileOrCreate",
+        "title": "Ruby LSP: Go To Relevant File or Create"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "rubyLsp.goToRelevantFileOrCreate",
+        "key": "ctrl+alt+.",
+        "mac": "alt+cmd+.",
+        "when": "editorTextFocus && editorLangId == ruby"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^6.x",
+    "@typescript-eslint/parser": "^6.x",
+    "eslint": "^8.x",
+    "typescript": "^5.x"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.0"
+  }
+}
